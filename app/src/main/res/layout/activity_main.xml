@@ -15,28 +15,49 @@
         app:fontFamily="@font/roboto"
         style="@style/my_text_style" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="NameStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        android:text="@string/what_is_your_nickname" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/layout_margin"
+        app:fontFamily="@font/roboto"
+        android:text="@string/done" />
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/handsomePic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/handsome_pic" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textViewDesc"
+                style="@style/my_text_style"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/my_desc"
-                android:textSize="@dimen/text_size"
-                style="@style/my_text_style"/>
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
     </ScrollView>
 
